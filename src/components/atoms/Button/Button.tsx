@@ -1,7 +1,7 @@
 import { Button as Btn } from '@mui/material';
 interface ButtonProps {
   label: string;
-  onClick: () => void;
+  onClick?: () => void;
 }
 const Button = (props: ButtonProps) => {
   const { label, onClick } = props;
