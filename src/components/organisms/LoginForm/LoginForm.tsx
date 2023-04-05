@@ -20,12 +20,7 @@ const LoginForm = () => {
           <TextFieldElement fullWidth name={'email'} label={'Email'} required />
         </Grid>
         <Grid item xs={12}>
-          <PasswordElement
-            fullWidth
-            name={'password'}
-            label={'Hasło'}
-            required
-          />
+          <PasswordElement fullWidth name={'password'} />
         </Grid>
         <Grid item xs={12}>
           <Button label="Zaloguj" />

@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Paper } from '@mui/material';
 import CarSearchForm from '../CarSearchForm/CarSearchForm';
 import { useEffect, useState } from 'react';
 import { getOffices } from '../../../api/offices';
@@ -13,9 +13,9 @@ const SearchBar = () => {
   }, []);
 
   return (
-    <Box>
+    <Paper elevation={3} sx={{ px: 5, py: 3, borderRadius: '25px' }}>
       <CarSearchForm offices={offices} />
-    </Box>
+    </Paper>
   );
 };
 
